@@ -45,21 +45,24 @@
                                     <constraint firstAttribute="trailing" secondItem="1dQ-JK-9Hh" secondAttribute="trailing" id="TXh-aX-tIm"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="327" placeholderIntrinsicHeight="247" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-hT-R5K">
-                                <frame key="frameInset" minX="24" minY="278" width="327" height="247"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="327" placeholderIntrinsicHeight="247" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-hT-R5K">
+                                <frame key="frameInset" minX="24" minY="278" width="327" height="305"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Msr-4a-jVN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3zL-T0-vZZ"/>
                             <constraint firstItem="Msr-4a-jVN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Jjd-Sl-B10"/>
-                            <constraint firstItem="EfM-hT-R5K" firstAttribute="top" secondItem="Msr-4a-jVN" secondAttribute="bottom" constant="12" id="LMn-R5-NYg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Msr-4a-jVN" secondAttribute="trailing" id="M9x-vE-Nwi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EfM-hT-R5K" secondAttribute="trailing" id="Unx-ik-lIG"/>
+                            <constraint firstItem="EfM-hT-R5K" firstAttribute="top" secondItem="Msr-4a-jVN" secondAttribute="bottom" constant="12" id="eAN-46-nAg"/>
+                            <constraint firstItem="EfM-hT-R5K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iwT-lO-uVE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mealNameLabel" destination="As9-xh-b4g" id="l4a-6N-BGS"/>
                         <outlet property="nameTextField" destination="1dQ-JK-9Hh" id="0Wy-WM-CgU"/>
+                        <outlet property="photoImageView" destination="EfM-hT-R5K" id="XF0-oB-XC5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -67,4 +70,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="750" height="750"/>
+    </resources>
 </document>
