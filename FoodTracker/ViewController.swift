@@ -43,6 +43,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Actions
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        // Hide the keyboard.
+        nameTextField.resignFirstResponder()
     }
     @IBAction func setDefaultLabelText(_ sender: AnyObject) {
         mealNameLabel.text = "Default Text"
