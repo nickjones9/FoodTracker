@@ -23,11 +23,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         nameTextField.delegate = self
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     // MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -40,11 +35,12 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         mealNameLabel.text = textField.text
     }
     // MARK: UIImagePickerControllerDelegate
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // Dismiss the picker if the user canceled.
         dismiss(animated: true, completion: nil)
     }
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         // The info dictionary contains multiple representations of the image, and this uses the original.
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         
@@ -54,6 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Dismiss the picker.
         dismiss(animated: true, completion: nil)
     }
+
     
     // MARK: Actions
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
@@ -63,6 +60,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // UIImagePickerController is a view controller that lets a user pick media from their photo library.
         let imagePickerController = UIImagePickerController()
         
+        imagePickerController.delegate = self
+        
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .photoLibrary
         
@@ -71,6 +70,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         present(imagePickerController, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
+        mealNameLabel.text = "Default Text"
     }
     
 }
