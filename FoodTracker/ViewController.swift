@@ -22,9 +22,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // Handle the text field’s user input through delegate callbacks.
         nameTextField.delegate = self
-        
     }
-
+    
     // MARK: UITextFieldDelegate
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -56,7 +55,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Actions
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
-       
         // Hide the keyboard.
         nameTextField.resignFirstResponder()
         
@@ -71,7 +69,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         present(imagePickerController, animated: true, completion: nil)
     }
-    @IBAction func setDefaultLabelText(_ sender: AnyObject) {
+    
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
         mealNameLabel.text = "Default Text"
     }
     
