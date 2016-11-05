@@ -24,6 +24,7 @@ class RatingControl: UIView {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         button.backgroundColor = UIColor.red
         button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchDown)
+        ratingButtons += [button]
         addSubview(button)
         }
     }
