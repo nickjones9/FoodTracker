@@ -16,6 +16,8 @@
 		F69F52711DCE5CB20072A148 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F52701DCE5CB20072A148 /* RatingControl.swift */; };
 		F69F52731DCFD1CE0072A148 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F52721DCFD1CE0072A148 /* Meal.swift */; };
 		F69F52741DCFD1CE0072A148 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F52721DCFD1CE0072A148 /* Meal.swift */; };
+		F69F52761DCFD84E0072A148 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F52751DCFD84E0072A148 /* MealTableViewCell.swift */; };
+		F69F52771DCFD84E0072A148 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F52751DCFD84E0072A148 /* MealTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 		F644A9251DBF873600A10FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F69F52701DCE5CB20072A148 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		F69F52721DCFD1CE0072A148 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		F69F52751DCFD84E0072A148 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		F644A9021DBF873400A10FCE = {
 			isa = PBXGroup;
 			children = (
+				F69F52751DCFD84E0072A148 /* MealTableViewCell.swift */,
 				F644A90D1DBF873500A10FCE /* FoodTracker */,
 				F644A9221DBF873600A10FCE /* FoodTrackerTests */,
 				F644A90C1DBF873500A10FCE /* Products */,
@@ -210,6 +214,7 @@
 				F644A9111DBF873500A10FCE /* ViewController.swift in Sources */,
 				F69F52711DCE5CB20072A148 /* RatingControl.swift in Sources */,
 				F644A90F1DBF873500A10FCE /* AppDelegate.swift in Sources */,
+				F69F52761DCFD84E0072A148 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +224,7 @@
 			files = (
 				F69F52741DCFD1CE0072A148 /* Meal.swift in Sources */,
 				F644A9241DBF873600A10FCE /* FoodTrackerTests.swift in Sources */,
+				F69F52771DCFD84E0072A148 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
