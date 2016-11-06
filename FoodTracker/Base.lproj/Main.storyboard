@@ -106,7 +106,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="V4v-eX-fwu" firstAttribute="top" secondItem="gRf-7i-1NI" secondAttribute="bottom" constant="60" id="INj-Ef-flA"/>
+                            <constraint firstItem="V4v-eX-fwu" firstAttribute="top" secondItem="gRf-7i-1NI" secondAttribute="bottom" constant="20" id="INj-Ef-flA"/>
                             <constraint firstItem="V4v-eX-fwu" firstAttribute="leading" secondItem="Ik8-3m-H5N" secondAttribute="leadingMargin" id="XTZ-rm-z7K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V4v-eX-fwu" secondAttribute="trailing" id="aYy-4d-wTZ"/>
                         </constraints>
