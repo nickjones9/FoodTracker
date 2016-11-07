@@ -58,6 +58,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     // MARK: UIImagePickerControllerDelegate
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // Dismiss the picker if the user canceled.
         dismiss(animated: true, completion: nil)
@@ -75,6 +76,9 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     // MARK: Navigation
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+    }
     
     // This method lets you configure a view controller before it's presented.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
