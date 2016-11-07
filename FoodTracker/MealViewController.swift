@@ -78,6 +78,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     // MARK: Navigation
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     
     // This method lets you configure a view controller before it's presented.

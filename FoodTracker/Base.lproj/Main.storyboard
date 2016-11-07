@@ -46,6 +46,7 @@
                                     <outlet property="mealLabel" destination="FeT-Za-kgh" id="cXu-gg-vbW"/>
                                     <outlet property="photoImageView" destination="l0L-YV-c8W" id="heC-9H-l0r"/>
                                     <outlet property="ratingControl" destination="gK9-IA-eFQ" id="DZe-to-1ve"/>
+                                    <segue destination="eA4-NM-3bk" kind="show" identifier="ShowDetail" id="Iss-3e-Cqk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -112,7 +113,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="gBV-3Z-ptF">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="JqY-1E-YRm"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="JqY-1E-YRm">
+                            <connections>
+                                <action selector="cancel:" destination="eA4-NM-3bk" id="09n-5I-06R"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="y4n-Vv-dzF">
                             <connections>
                                 <segue destination="Mye-NN-LDG" kind="unwind" unwindAction="unwindToMealListWithSender:" id="G4z-v3-Z8n"/>
@@ -170,10 +175,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2p9-9s-Tvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="198.35082458770617"/>
+            <point key="canvasLocation" x="1161" y="652"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultImage" width="750" height="750"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Iss-3e-Cqk"/>
+    </inferredMetricsTieBreakers>
 </document>
