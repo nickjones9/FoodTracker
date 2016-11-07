@@ -112,9 +112,10 @@ class MealTableViewController: UITableViewController {
             
             // Get the cell that generated this segue.
             if let selectedMealCell = sender as? MealTableViewCell {
-                let indexPath = tableView.indexPath(for: selectedMealCell)!
+                if let indexPath = tableView.indexPath(for: selectedMealCell){
                 let selectedMeal = meals[indexPath.row]
                 mealDetailViewController.meal = selectedMeal
+                }
             }
         }
         else if segue.identifier == "AddItem" {
@@ -127,6 +128,17 @@ class MealTableViewController: UITableViewController {
         
         if let sourceViewController = sender.source as?
             MealViewController, let meal = sourceViewController.meal {
+            
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                // Update an existing meal.
+                meals[selectedIndexPath.row] = meal
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
+                // Add a new meal.
+                let newIndexPath = NSIndexPath(row: meals.count, section: 0)
+                meals.append(meal)
+                tableView.insertRows(at: [newIndexPath as IndexPath], with: .bottom)
+            }
             
             // Add a new meal.
             let newIndexPath = IndexPath(row: meals.count, section: 0)
